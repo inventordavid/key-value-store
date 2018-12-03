@@ -13,7 +13,7 @@ Test Class:
 
 Some performance notes:
 - In this program, I try to generate less garbage by reusing objects.
-- HashMap size is initialized with EXPECTED_NUMBER_OF_UNIQUE_KEYS to avoid
+- HashMap size is initialized with EXPECTED_NUMBER_OF_UNIQUE_KEYS to minimize
   resizing and to improve hash function distribution with less duplicated values.
 - Java 8 Stream is used.
 - Methods are made shorter to favour JIT compiler.
